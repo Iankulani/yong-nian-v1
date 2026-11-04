@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  yong-nian-v1:
+    build: .
+    image: yong-nian-v1:1.0.0
+    container_name: yong-nian-v1
+    restart: unless-stopped
+    network_mode: host          # needed for raw sockets / scanning
+    cap_add:
+      - NET_RAW
+      - NET_ADMIN
+      - SYS_PTRACE
+    volumes:
+      - ./data/.yong_nian_v1:/app/.yong_nian_v1
+      - ./data/yong_nian_reports:/app/yong_nian_reports
+    environment:
+      - YONG_NIAN_ENV=production
+    stdin_open: true
+    tty: true
