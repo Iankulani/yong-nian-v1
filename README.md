@@ -37,10 +37,12 @@ cd yong-nian-v1
 
 # How to run
 ```bash
-python3 /yong_nian_v1.py
+python3 yong_nian_v1.py
 ```
 # Documentation
 
 #
 
-# Star History
+# ⭐ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Iankulani/yong-nian-v1&type=Date)](https://star-history.com/#Iankulani/yong-nian-v1&Date)
